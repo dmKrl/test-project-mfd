@@ -5,7 +5,7 @@ import cls from './FooterNavbar.module.scss';
 interface FooterNavbarProps {
 }
 
-export const FooterNavbar: FC<FooterNavbarProps> = (props) => {
+export const FooterNavbar: FC<FooterNavbarProps> = () => {
     return (
         <div className={cls.footerNavbar}>
             <AppLink theme={LinkOptions.SECONDARY} to='/'>Privacy Policy</AppLink>

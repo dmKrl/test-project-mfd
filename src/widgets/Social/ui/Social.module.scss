@@ -1,0 +1,13 @@
+.social {
+    display: flex;
+    gap: 46px;
+}
+
+.socialIcon {
+    fill: none;
+    transition: 0.2s fill ease;
+}
+
+.socialIcon:hover {
+    fill: var(--white-color);
+}

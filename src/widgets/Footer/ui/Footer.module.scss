@@ -3,15 +3,26 @@
     flex-direction: column;
     background-color: var(--primary-color);
     width: 100%;
+    padding: 90px 0px;
 }
 
-.footerUp, .footerDown {
+.footerUp,
+.footerDown {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
 .footerDown {
     padding-top: 60px;
     border-top: 1px solid #8181813f;
+}
+
+.footerDown p {
+    color: #999;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
 }

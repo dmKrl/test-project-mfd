@@ -5,7 +5,7 @@ import cls from './HeaderNavbar.module.scss';
 interface HeaderNavbarProps {
 }
 
-export const HeaderNavbar: FC<HeaderNavbarProps> = (props) => {
+export const HeaderNavbar: FC<HeaderNavbarProps> = () => {
     return (
         <div className={cls.headerNavbar}>
             <AppLink theme={LinkOptions.PRIMARY} to='/'>DISCOVER</AppLink>

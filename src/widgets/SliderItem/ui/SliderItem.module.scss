@@ -1,0 +1,44 @@
+.sliderItem {
+    padding: 14px;
+    border-radius: 23.479px;
+    background: var(--white-color);
+    box-shadow: 38.817px 11.763px 58.813px 0px rgba(199, 199, 199, 0.6);
+}
+.slideImg {
+    position: relative;
+}
+
+.slideContent {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 4px 4px;
+}
+
+.slideContent h4 {
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 21.173px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.slideInfo {
+    display: flex;
+    gap: 40px;
+}
+
+.slideInfoLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.slideInfoLeft p {
+    color: #94a3b8;
+    font-family: Poppins;
+    font-size: 14.115px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.118px;
+}

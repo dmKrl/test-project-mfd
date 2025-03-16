@@ -5,7 +5,7 @@ import cls from './InfoItems.module.scss';
 interface InfoItemsProps {
 }
 
-export const InfoItems: FC<InfoItemsProps> = (props) => {
+export const InfoItems: FC<InfoItemsProps> = () => {
     return (
         <div className={cls.infoItems}>
             <InfoItem quantity='430K+' quantityName='Art Works' />

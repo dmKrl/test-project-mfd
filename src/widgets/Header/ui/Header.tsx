@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { FC } from 'react';
 import { AppLink } from 'shared/AppLink/ui/AppLink';
 import { Button, ButtonOptions } from 'shared/Button/ui/Button';
@@ -8,9 +9,9 @@ import cls from './Header.module.scss';
 interface HeaderProps {
 }
 
-export const Header: FC<HeaderProps> = (props) => {
+export const Header: FC<HeaderProps> = () => {
     return (
-        <div className={cls.header}>
+        <div className={classNames('', {}, [cls.header])}>
             <div className={cls.headerWrapper}>
                 <AppLink to='/'><LogoHeader /></AppLink>
                 <HeaderNavbar />

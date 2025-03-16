@@ -17,10 +17,13 @@
 .content-page {
     max-width: 1440px;
     width: 100%;
-    padding: 40px 90px 80px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.container {
+    padding: 90px;
 }
 
 .page-wrapper {
