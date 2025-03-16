@@ -1,0 +1,44 @@
+.button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    transition: 0.2s background ease;
+}
+
+.primary {
+    border-radius: 12px;
+    background: var(--primary-color);
+}
+
+.primary:hover {
+    background: #222;
+}
+
+.primaryInverted {
+    border-radius: 12px;
+    background: #00000000;
+    border: 2px solid var(--white-color);
+}
+
+.primaryInverted:hover {
+    background: #d7d7d7;
+}
+
+.secondary {
+    border-radius: 12px;
+    background: #d7d7d700;
+    border: 1.5px solid var(--black-color);
+}
+
+.secondary:hover {
+    background: #d7d7d7;
+}
+
+.secondaryInverted {
+    border-radius: 12px;
+    background: #fff;
+}
+
+.secondaryInverted:hover {
+    background: #f2f2f2;
+}

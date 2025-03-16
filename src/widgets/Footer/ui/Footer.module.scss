@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+.footerUp, .footerDown {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footerDown {
+    padding-top: 60px;
+    border-top: 1px solid #8181813f;
+}
