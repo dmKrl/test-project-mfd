@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { AppLink } from 'shared/AppLink/ui/AppLink';
+import { AppLink, LinkOptions } from 'shared/AppLink/ui/AppLink';
 import { Social } from 'widgets/Social';
 import LogoFooter from 'widgets/assets/logo-footer.svg';
 import { FooterNavbar } from 'widgets/Navabar';
@@ -13,7 +13,11 @@ export const Footer: FC<FooterProps> = () => {
     return (
         <div className={classNames('container', {}, [cls.footer])}>
             <div className={cls.footerUp}>
-                <AppLink to='/'><LogoFooter /></AppLink>
+                <div className={cls.footerLinks}>
+                    <AppLink to='/' theme={LinkOptions.CLEAR}><LogoFooter /></AppLink>
+                    <AppLink to='/' theme={LinkOptions.UNIQUE}>DiveSea</AppLink>
+
+                </div>
                 <FooterNavbar />
             </div>
             <div className={cls.footerDown}>

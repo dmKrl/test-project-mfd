@@ -1,0 +1,27 @@
+import { FC } from 'react';
+import { Button, ButtonOptions } from 'shared/Button/ui/Button';
+import createImg from '../assets/createImg.png';
+import cls from './Join.module.scss';
+
+interface JoinProps {
+}
+
+export const Join: FC<JoinProps> = () => {
+    return (
+        <div className={cls.join}>
+            <div className={cls.joinContainer}>
+                <div className={cls.joinLeft}>
+                    <h4>Create and Sell NFTs</h4>
+                    <p>World’s Largest NFT Place</p>
+                    <div className={cls.joinBlockButtons}>
+                        <Button themeButton={ButtonOptions.SECONDARY_INVERTED}>Explore More</Button>
+                        <Button themeButton={ButtonOptions.PRIMARY_INVERTED}>Sell Artwork</Button>
+                    </div>
+                </div>
+                <div className={cls.joinRight}>
+                    <img src={createImg} alt="create-img-nft" />
+                </div>
+            </div>
+        </div>
+    );
+};

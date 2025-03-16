@@ -6,6 +6,8 @@ import cls from './AppLink.module.scss';
 export enum LinkOptions {
     PRIMARY = 'primary',
     SECONDARY = 'secondary',
+    UNIQUE = 'unique',
+    CLEAR = 'clear',
 }
 
 interface AppLinkProps extends LinkProps {

@@ -1,0 +1,44 @@
+.join {
+    padding: 115px 100px 160px;
+}
+.joinContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    background: #141416;
+    padding: 45px 31px 45px 66px;
+    position: relative;
+}
+.joinLeft {
+    display: flex;
+    flex-direction: column;
+}
+.joinLeft h4 {
+    color: var(--white-color);
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.45px;
+}
+.joinLeft p {
+    color: #d4d4d4;
+    font-family: Poppins;
+    font-size: 20.265px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.203px;
+    margin: 12px 0px 50px;
+}
+.joinBlockButtons {
+    display: flex;
+    gap: 30px;
+}
+.joinRight {
+    position: absolute;
+    right: -20px;
+    bottom: -50px;
+}
