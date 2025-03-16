@@ -1,0 +1,25 @@
+.infoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.infoQuantity {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: 'Public Sans';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45.964px;
+}
+
+.infoQuantityName {
+    color: #848586;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.386px;
+}

@@ -6,9 +6,11 @@ import './styles/index.scss';
 export const App = () => {
     return (
         <div className='app'>
-            <Header />
-            <MainPage />
-            <Footer />
+            <div className='content-page'>
+                <Header />
+                <MainPage />
+                <Footer />
+            </div>
         </div>
     );
 };
