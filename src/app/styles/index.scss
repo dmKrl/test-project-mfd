@@ -1,7 +1,7 @@
-@use "./reset";
-@use "./themes//light.scss";
-@use "./variables/global";
-@use "./variables//typography.scss";
+@use './reset';
+@use './themes//light.scss';
+@use './variables/global';
+@use './variables//typography.scss';
 
 .app {
     min-height: 100vh;
@@ -16,7 +16,6 @@
 }
 
 .content-page {
-    max-width: 1440px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -24,7 +23,9 @@
 }
 
 .container {
+    max-width: 1440px;
     padding: 90px;
+    margin: 0 auto;
 }
 
 .page-wrapper {

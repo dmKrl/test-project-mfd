@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Button, ButtonOptions } from 'shared/Button/ui/Button';
+import classNames from 'classnames';
 import createImg from '../assets/createImg.png';
 import cls from './Join.module.scss';
 
@@ -8,7 +9,7 @@ interface JoinProps {
 
 export const Join: FC<JoinProps> = () => {
     return (
-        <div className={cls.join}>
+        <div className={classNames('container', {}, [cls.join])}>
             <div className={cls.joinContainer}>
                 <div className={cls.joinLeft}>
                     <h4>Create and Sell NFTs</h4>

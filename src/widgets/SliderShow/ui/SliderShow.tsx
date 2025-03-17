@@ -9,8 +9,10 @@ interface SliderShowProps {
 export const SliderShow: FC<SliderShowProps> = () => {
     return (
         <div className={classNames('', {}, [cls.sliderShow])}>
-            <h2>Weekly - Top NFT</h2>
-            <Slider />
+            <div className={classNames('container', {}, [cls.sliderShowBlock])}>
+                <h2>Weekly - Top NFT</h2>
+                <Slider />
+            </div>
         </div>
     );
 };

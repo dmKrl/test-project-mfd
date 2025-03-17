@@ -5,10 +5,21 @@
     background-color: var(--bg-color);
     width: 100%;
     max-height: var(--header-height);
-    padding: 45px 90px;
+    padding: 45px !important;
 }
 
 .headerWrapper {
     display: flex;
     gap: 57px;
+}
+
+.isFixed {
+    position: fixed;
+    background-color: var(--white-color);
+    z-index: 20;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0px 0px 20px 20px;
 }

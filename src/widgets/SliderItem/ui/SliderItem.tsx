@@ -8,9 +8,10 @@ import { randomizerTimer } from '../lib/randomizerTimer';
 
 interface SliderItemProps {
     score: string;
+    img: string;
 }
 
-export const SliderItem: FC<SliderItemProps> = ({ score }) => {
+export const SliderItem: FC<SliderItemProps> = ({ score, img }) => {
     const time = new Date();
 
     // Чтобы не сбрасывался счётчик, данные могут приходить с бэка
@@ -20,7 +21,7 @@ export const SliderItem: FC<SliderItemProps> = ({ score }) => {
     return (
         <div className={cls.sliderItem}>
             <div className={cls.slideBlockImg}>
-                <img src={sliderItem1} alt="slider-img" />
+                <img src={img} alt="slider-img" />
                 <div className={cls.slideTimer}>
                     <MyTimer expiryTimestamp={time} />
                 </div>

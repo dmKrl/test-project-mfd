@@ -1,6 +1,9 @@
 import { FC } from 'react';
+import classNames from 'classnames';
 import { Button, ButtonOptions } from 'shared/Button/ui/Button';
 import { InfoItems } from 'shared/InfoItems/ui/InfoItems';
+import { ImageAnimation } from 'shared/ImageAnimation/ui/ImageAnimation';
+import Arrow from '../assets/arrow.svg';
 import cls from './Info.module.scss';
 
 interface InfoProps {
@@ -8,7 +11,11 @@ interface InfoProps {
 
 export const Info: FC<InfoProps> = (props) => {
     return (
-        <div className={cls.info}>
+        <div className={classNames('container', {}, [cls.info])}>
+            <Arrow className={cls.infoArrow} />
+            <div className={cls.infoBlockAnimation}>
+                <ImageAnimation />
+            </div>
             <div className={cls.infoWrapper}>
                 <h1>Discover And Create NFTs</h1>
                 <p className={cls.infoDescription}>
@@ -20,7 +27,9 @@ export const Info: FC<InfoProps> = (props) => {
                     <Button themeButton={ButtonOptions.PRIMARY}>EXPLORE MORE</Button>
                     <Button themeButton={ButtonOptions.SECONDARY}>CREATE NFT</Button>
                 </div>
-                <InfoItems />
+                <div className={cls.infoItems}>
+                    <InfoItems />
+                </div>
             </div>
         </div>
     );

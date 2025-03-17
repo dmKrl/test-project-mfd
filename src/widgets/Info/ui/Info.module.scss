@@ -1,6 +1,27 @@
 .info {
     display: flex;
-    padding: 136px 90px 170px;
+    padding: 136px 90px 170px !important;
+    position: relative;
+}
+
+.infoArrow {
+    position: absolute;
+    top: 20%;
+    right: 160px;
+    animation: opacityArrow 4s ease;
+    z-index: 11;
+}
+
+@keyframes opacityArrow {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .infoWrapper {
@@ -18,6 +39,7 @@
     line-height: 120%;
     letter-spacing: -3px;
     text-transform: capitalize;
+    animation: opacityArrow 1s ease;
 }
 
 .infoDescription {
@@ -28,6 +50,7 @@
     font-weight: 400;
     line-height: 28px;
     max-width: 499px;
+    animation: opacityArrow 2s ease;
 }
 
 .infoWrapper p b {
@@ -39,4 +62,16 @@
     display: flex;
     gap: 23px;
     margin: 45px 0 82px;
+    animation: opacityArrow 3s ease;
+}
+
+.infoItems {
+    display: flex;
+    gap: 65px;
+    animation: opacityArrow 3.5s ease;
+}
+
+.infoBlockAnimation {
+    position: absolute;
+    right: 0;
 }
