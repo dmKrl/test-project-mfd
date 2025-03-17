@@ -23,3 +23,13 @@
     font-weight: 500;
     line-height: 18.386px;
 }
+
+@media (max-width: 1024px) {
+    .infoQuantity {
+        font-size: 26px;
+    }
+
+    .infoQuantityName {
+        font-size: 8px;
+    }
+}

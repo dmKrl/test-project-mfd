@@ -99,3 +99,24 @@
 .secondaryInverted:hover {
     background: #f2f2f2;
 }
+
+@media (max-width: 1024px) {
+    .button {
+        font-size: 12px;
+    }
+
+    .primary,
+    .primaryHeader,
+    .secondary {
+        font-size: 12px;
+    }
+
+    .primaryInverted,
+    .secondaryInverted {
+        font-size: 15px;
+    }
+
+    .primaryCard {
+        font-size: 10px;
+    }
+}

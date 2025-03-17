@@ -13,6 +13,8 @@
         "order/properties-order": [],
         "plugin/rational-order": [false],
         "keyframes-name-pattern": null,
-        "font-family-no-missing-generic-family-keyword": null
+        "font-family-no-missing-generic-family-keyword": null,
+        "rule-empty-line-before": null,
+        "length-zero-no-unit": null
     }
 }

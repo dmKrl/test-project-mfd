@@ -1,5 +1,5 @@
 .slick-list {
-    padding: 70px 0;
+    padding: 70px 0px;
 }
 
 .slick-slider {
@@ -33,28 +33,14 @@
 }
 
 .slick-next::before {
-    content: url('/public/assets/icons/arrowNext.svg') !important;
+    content: url("/public/assets/icons/arrowNext.svg") !important;
 }
 
 .slick-prev::before {
-    content: url('/public/assets/icons/arrowPrev.svg') !important;
-}
-
-@media (max-width: 1540px) {
-    // .slick-slide {
-    //     min-width: 530px;
-    //     max-width: 600px;
-    // }
-
-    // .slick-list {
-    //     padding: 0 160px 50px !important;
-    // }
+    content: url("/public/assets/icons/arrowPrev.svg") !important;
 }
 
 @media (max-width: 1280px) {
-    // .slick-slide {
-    //     min-width: 460px;
-    // }
     .slick-prev,
     .slick-next {
         top: 480px;

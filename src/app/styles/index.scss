@@ -1,22 +1,26 @@
-@use './reset';
-@use './themes//light.scss';
-@use './variables/global';
-@use './variables//typography.scss';
-@use './swiper/swiper.scss';
+@use "./reset";
+@use "./themes//light.scss";
+@use "./variables/global";
+@use "./variables//typography.scss";
+@use "./swiper/swiper.scss";
 
 body {
     @media screen and (min-width: 3840px) {
         zoom: 2;
     }
+
     @media screen and (min-width: 2560px) {
         zoom: 1.5;
     }
+
     @media screen and (max-width: 1380px) {
         zoom: 0.8;
     }
+
     @media screen and (max-width: 1160px) {
         zoom: 0.6;
     }
+
     @media screen and (max-width: 600px) {
         zoom: 1;
     }
@@ -59,6 +63,6 @@ button {
 
 @media (max-width: 1540px) {
     .container {
-        padding: 90px 0px;
+        padding: 90px 0;
     }
 }

@@ -8,11 +8,11 @@
     position: absolute;
     top: 20%;
     right: 160px;
-    animation: opacityArrow 4s ease;
+    animation: opacityIn 4s ease;
     z-index: 11;
 }
 
-@keyframes opacityArrow {
+@keyframes opacityIn {
     0% {
         opacity: 0;
     }
@@ -41,7 +41,7 @@
     line-height: 120%;
     letter-spacing: -3px;
     text-transform: capitalize;
-    animation: opacityArrow 1s ease;
+    animation: opacityIn 1s ease;
 }
 
 .infoDescription {
@@ -52,7 +52,7 @@
     font-weight: 400;
     line-height: 28px;
     max-width: 499px;
-    animation: opacityArrow 2s ease;
+    animation: opacityIn 2s ease;
 }
 
 .infoWrapper p b {
@@ -64,16 +64,40 @@
     display: flex;
     gap: 23px;
     margin: 45px 0 82px;
-    animation: opacityArrow 3s ease;
+    animation: opacityIn 3s ease;
 }
 
 .infoItems {
     display: flex;
     gap: 65px;
-    animation: opacityArrow 3.5s ease;
+    animation: opacityIn 3.5s ease;
 }
 
 .infoBlockAnimation {
     position: absolute;
     right: 0;
+}
+
+@media (max-width: 1024px) {
+    .infoWrapper h1 {
+        font-size: 53px;
+    }
+
+    .infoDescription {
+        font-size: 13px;
+        max-width: 354px;
+    }
+
+    .infoWrapper {
+        max-width: 403px;
+    }
+
+    .infoBlockAnimation,
+    .infoArrow {
+        transform: scale(0.8);
+    }
+
+    .infoArrow {
+        right: 120px;
+    }
 }

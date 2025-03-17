@@ -58,3 +58,25 @@
     align-items: center;
     gap: 2px;
 }
+
+.slideScore p {
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+@media (max-width: 1024px) {
+    .slideContent h4 {
+        font-size: 15px;
+    }
+
+    .slideInfoLeft p {
+        font-size: 10px;
+    }
+
+    .slideScore p {
+        font-size: 16px;
+    }
+}
