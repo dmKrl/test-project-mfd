@@ -2,6 +2,7 @@
 @use './themes//light.scss';
 @use './variables/global';
 @use './variables//typography.scss';
+@use './swiper/swiper.scss';
 
 .app {
     min-height: 100vh;

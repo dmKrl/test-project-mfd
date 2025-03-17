@@ -1,0 +1,57 @@
+.slick-list {
+    padding: 70px 0px;
+}
+
+.slick-slider {
+    max-width: 1440px;
+    max-height: 600px;
+    position: relative;
+}
+.slick-slide {
+    min-width: 280px;
+    max-width: 320px;
+}
+.slick-track {
+    max-height: 438px;
+    display: flex;
+}
+
+.slick-prev,
+.slick-next {
+    top: 510px;
+    z-index: 20;
+}
+
+.slick-prev {
+    left: 645px;
+}
+.slick-next {
+    left: 765px;
+}
+
+.slick-next:before {
+    content: url('/public/assets/icons/arrowNext.svg') !important;
+}
+.slick-prev:before {
+    content: url('/public/assets/icons/arrowPrev.svg') !important;
+}
+@media (max-width: 1540px) {
+    .slick-slide {
+        min-width: 530px;
+        max-width: 600px;
+    }
+    .slick-list {
+        padding: 0px 160px 50px !important;
+    }
+}
+@media (max-width: 1280px) {
+    .slick-slide {
+        min-width: 460px;
+    }
+    .slick-list {
+        padding: 0px 160px 50px !important;
+    }
+    .slick-track {
+        width: 9000px !important;
+    }
+}

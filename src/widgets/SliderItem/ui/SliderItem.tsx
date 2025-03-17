@@ -2,7 +2,6 @@ import { FC } from 'react';
 import { Button, ButtonOptions } from 'shared/Button/ui/Button';
 import EthereumSvg from 'widgets/SliderItem/assets/ethereum.svg';
 import { MyTimer } from 'features';
-import sliderItem1 from '../assets/sliderItem1.png';
 import cls from './SliderItem.module.scss';
 import { randomizerTimer } from '../lib/randomizerTimer';
 
