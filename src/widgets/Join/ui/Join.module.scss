@@ -1,6 +1,7 @@
 .join {
     padding: 115px 100px 160px;
 }
+
 .joinContainer {
     display: flex;
     justify-content: space-between;
@@ -10,10 +11,12 @@
     padding: 45px 31px 45px 66px;
     position: relative;
 }
+
 .joinLeft {
     display: flex;
     flex-direction: column;
 }
+
 .joinLeft h4 {
     color: var(--white-color);
     font-family: Poppins;
@@ -23,6 +26,7 @@
     line-height: 130%;
     letter-spacing: 0.45px;
 }
+
 .joinLeft p {
     color: #d4d4d4;
     font-family: Poppins;
@@ -31,12 +35,14 @@
     font-weight: 500;
     line-height: 130%;
     letter-spacing: 0.203px;
-    margin: 12px 0px 50px;
+    margin: 12px 0 50px;
 }
+
 .joinBlockButtons {
     display: flex;
     gap: 30px;
 }
+
 .joinRight {
     position: absolute;
     right: -20px;

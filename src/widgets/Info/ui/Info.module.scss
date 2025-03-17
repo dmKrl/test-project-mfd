@@ -20,7 +20,7 @@
     text-transform: capitalize;
 }
 
-.infoWrapper p {
+.infoDescription {
     color: #676767;
     text-align: justify;
     font-family: Inter;
@@ -38,5 +38,5 @@
 .infoBlockButtons {
     display: flex;
     gap: 23px;
-    margin: 45px 0px 82px;
+    margin: 45px 0 82px;
 }

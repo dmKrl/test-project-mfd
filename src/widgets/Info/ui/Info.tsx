@@ -11,7 +11,7 @@ export const Info: FC<InfoProps> = (props) => {
         <div className={cls.info}>
             <div className={cls.infoWrapper}>
                 <h1>Discover And Create NFTs</h1>
-                <p>
+                <p className={cls.infoDescription}>
                     Discover, Create and Sell NFTs On Our NFT Marketplace With
                     Over Thousands Of NFTs And Get a
                     <b>$20 bonus.</b>
