@@ -1,7 +1,7 @@
-@use './reset';
-@use './themes//light.scss';
-@use './variables/global';
-@use './variables//typography.scss';
+@use "./reset";
+@use "./themes//light.scss";
+@use "./variables/global";
+@use "./variables//typography.scss";
 
 .app {
     min-height: 100vh;

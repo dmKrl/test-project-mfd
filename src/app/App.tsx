@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import { Header } from 'widgets/Header/ui/Header';
 import { MainPage } from 'pages/MainPage/MainPage';
 import { Footer } from 'widgets/Footer/ui/Footer';

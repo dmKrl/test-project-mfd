@@ -12,6 +12,7 @@
         ],
         "order/properties-order": [],
         "plugin/rational-order": [false],
-        "keyframes-name-pattern": null
+        "keyframes-name-pattern": null,
+        "font-family-no-missing-generic-family-keyword": null
     }
 }

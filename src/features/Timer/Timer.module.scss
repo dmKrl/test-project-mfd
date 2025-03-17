@@ -1,0 +1,20 @@
+.timer {
+    padding: 9px 14px;
+    border-radius: 9.41px;
+    border: 1.176px solid rgba(28, 29, 32, 0.08);
+    background: rgba(28, 29, 32, 0.35);
+    box-shadow: 0px 4.705px 14.115px 0px rgba(28, 29, 32, 0.08);
+    backdrop-filter: blur(2.352520704269409px);
+}
+
+.timerContent {
+    display: flex;
+    gap: 4px;
+    color: var(--white-color);
+    font-family: Poppins;
+    font-size: 14.115px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.118px;
+}

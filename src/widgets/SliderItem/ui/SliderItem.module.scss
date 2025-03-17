@@ -5,8 +5,14 @@
     box-shadow: 38.817px 11.763px 58.813px 0 rgb(199 199 199 / 60%);
 }
 
-.slideImg {
+.slideBlockImg {
     position: relative;
+}
+
+.slideTimer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .slideContent {
@@ -33,6 +39,8 @@
 .slideInfoLeft {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    gap: 2px;
 }
 
 .slideInfoLeft p {
@@ -42,4 +50,10 @@
     font-weight: 400;
     line-height: 150%;
     letter-spacing: 0.118px;
+}
+
+.slideScore {
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
