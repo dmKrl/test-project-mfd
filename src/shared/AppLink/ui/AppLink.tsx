@@ -7,6 +7,7 @@ export enum LinkOptions {
     PRIMARY = 'primary',
     SECONDARY = 'secondary',
     UNIQUE = 'unique',
+    UNIQUE_BLACK = 'uniqueBlack',
     CLEAR = 'clear',
 }
 

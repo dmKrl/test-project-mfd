@@ -17,3 +17,23 @@
     font-weight: 600;
     line-height: 26.916px;
 }
+
+.arrowButtons {
+    width: 166px;
+    height: 68.987px;
+    background-color: var(--white-color);
+    padding: 20px 40px;
+    border-radius: 14px;
+}
+
+@media (max-width: 1280px) {
+    .sliderShow h2 {
+        color: #c5c5c5;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Poppins;
+        font-size: 45px;
+        font-weight: 600;
+        margin-bottom: 60px;
+        line-height: 26.916px;
+    }
+}

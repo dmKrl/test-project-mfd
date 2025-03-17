@@ -12,6 +12,7 @@ export const SliderShow: FC<SliderShowProps> = () => {
             <div className={classNames('container', {}, [cls.sliderShowBlock])}>
                 <h2>Weekly - Top NFT</h2>
                 <ProductSlider />
+                <div className={cls.arrowButtons} />
             </div>
         </div>
     );

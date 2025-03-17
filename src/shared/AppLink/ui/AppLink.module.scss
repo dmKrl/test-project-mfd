@@ -13,13 +13,18 @@
     margin: 0;
 }
 
-.unique {
-    color: #fff;
+.unique,
+.uniqueBlack {
+    color: var(--white-color);
     font-family: Poppins;
     font-size: 29.922px;
     font-weight: 600;
     line-height: 130%;
     padding: 0;
+}
+
+.uniqueBlack {
+    color: var(--black-color);
 }
 
 .primary {

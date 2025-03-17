@@ -4,12 +4,12 @@ import { AppLink, LinkOptions } from 'shared/AppLink/ui/AppLink';
 import { Button, ButtonOptions } from 'shared/Button/ui/Button';
 import LogoHeader from 'widgets/assets/logo-header.svg';
 import { HeaderNavbar } from 'widgets/Navabar';
-import cls from './Header.module.scss';
+import cls from './HeaderDesktop.module.scss';
 
-interface HeaderProps {
+interface HeaderDesktopProps {
 }
 
-export const Header: FC<HeaderProps> = () => {
+export const HeaderDesktop: FC<HeaderDesktopProps> = () => {
     const [isFixed, setIsFixed] = useState(false);
 
     const mods: Record<string, boolean> = {
@@ -40,5 +40,6 @@ export const Header: FC<HeaderProps> = () => {
             </div>
             <Button themeButton={ButtonOptions.PRIMARY_HEADER}>Connect Wallet</Button>
         </div>
+
     );
 };

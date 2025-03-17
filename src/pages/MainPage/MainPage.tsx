@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import { FC } from 'react';
 import { SliderShow } from 'widgets/SliderShow';
 import { Join } from 'widgets/Join';
@@ -9,7 +8,7 @@ interface MainPageProps {
 
 export const MainPage: FC<MainPageProps> = () => {
     return (
-        <div className={classNames('', {}, [])}>
+        <div>
             <Info />
             <SliderShow />
             <Join />

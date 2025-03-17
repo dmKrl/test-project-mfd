@@ -8,7 +8,6 @@ import slideImg2 from 'widgets/Slider/assets/slideImg2.png';
 import slideImg3 from 'widgets/Slider/assets/slideImg3.png';
 import slideImg4 from 'widgets/Slider/assets/slideImg4.png';
 import slideImg5 from 'widgets/Slider/assets/slideImg5.png';
-import cls from './Product.module.scss';
 
 export const ProductSlider: FC = () => {
     const sliderRef = useRef<Slider>(null);
@@ -36,8 +35,7 @@ export const ProductSlider: FC = () => {
                     infinite: true,
                     slidesToShow: 5,
                     centerMode: false,
-                    centerPadding: '100px',
-                    speed: 400,
+                    speed: 300,
                     slidesToScroll: 1,
                     focusOnSelect: false,
                 },
@@ -46,10 +44,9 @@ export const ProductSlider: FC = () => {
                 breakpoint: 1280,
                 settings: {
                     infinite: true,
-                    centerPadding: '100px',
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
-                    centerMode: false,
+                    centerMode: true,
                     focusOnSelect: false,
                 },
             },
@@ -64,15 +61,12 @@ export const ProductSlider: FC = () => {
     };
 
     return (
-        <>
-            <Slider ref={sliderRef} {...settings}>
-                <SliderItem score='1.75' img={slideImg1} />
-                <SliderItem score='1.75' img={slideImg2} />
-                <SliderItem score='1.75' img={slideImg3} />
-                <SliderItem score='1.25' img={slideImg4} />
-                <SliderItem score='1.25' img={slideImg5} />
-            </Slider>
-            <div className={cls.arrowButtons} />
-        </>
+        <Slider ref={sliderRef} {...settings}>
+            <SliderItem score='1.75' img={slideImg1} />
+            <SliderItem score='1.75' img={slideImg2} />
+            <SliderItem score='1.75' img={slideImg3} />
+            <SliderItem score='1.25' img={slideImg4} />
+            <SliderItem score='1.25' img={slideImg5} />
+        </Slider>
     );
 };
