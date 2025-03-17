@@ -5,6 +5,8 @@ import cls from './Button.module.scss';
 export enum ButtonOptions {
     PRIMARY = 'primary',
     PRIMARY_INVERTED = 'primaryInverted',
+    PRIMARY_CARD = 'primaryCard',
+    PRIMARY_HEADER = 'primaryHeader',
     SECONDARY = 'secondary',
     SECONDARY_INVERTED = 'secondaryInverted',
 }

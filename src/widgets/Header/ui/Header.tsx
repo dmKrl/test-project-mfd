@@ -16,7 +16,7 @@ export const Header: FC<HeaderProps> = () => {
                 <AppLink to='/' theme={LinkOptions.CLEAR}><LogoHeader /></AppLink>
                 <HeaderNavbar />
             </div>
-            <Button themeButton={ButtonOptions.PRIMARY}>Connect Wallet</Button>
+            <Button themeButton={ButtonOptions.PRIMARY_HEADER}>Connect Wallet</Button>
         </div>
     );
 };

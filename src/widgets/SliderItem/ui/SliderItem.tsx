@@ -18,7 +18,7 @@ export const SliderItem: FC<SliderItemProps> = () => {
                     <div className={cls.slideInfoLeft}>
                         <p>Current bid</p>
                     </div>
-                    <Button themeButton={ButtonOptions.PRIMARY}>PLACE BID</Button>
+                    <Button themeButton={ButtonOptions.PRIMARY_CARD}>PLACE BID</Button>
                 </div>
             </div>
         </div>

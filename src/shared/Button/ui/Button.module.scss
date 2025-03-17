@@ -3,22 +3,18 @@
     margin: 0;
     border: none;
     transition: 0.2s background ease;
+    font-family: Poppins;
+    font-weight: 500;
 }
-
+// Primary
 .primary {
     border-radius: 12px;
     background: var(--primary-color);
     color: var(--white-color);
-    font-family: Poppins;
     font-size: 16px;
-    font-weight: 500;
     line-height: normal;
     letter-spacing: 0.163px;
     text-transform: uppercase;
-}
-
-.primary:hover {
-    background: #222;
 }
 
 .primaryInverted {
@@ -26,6 +22,39 @@
     background: #0000;
     color: var(--white-color);
     border: 2px solid var(--white-color);
+    font-family: Outfit;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.primaryCard {
+    color: var(--white-color);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.118px;
+    border-radius: 12px;
+    background: var(--primary-color);
+    padding: 15px 24px;
+}
+
+.primaryHeader {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24.258px;
+    text-transform: uppercase;
+    border-radius: 16px;
+    background: var(--primary-color);
+    padding: 16px 24px;
+}
+
+.primary:hover,
+.primaryCard:hover,
+.primaryHeader:hover {
+    background: #222;
 }
 
 .primaryInverted:hover {
@@ -33,26 +62,31 @@
     color: #1a1a1a;
 }
 
+// Secondary
 .secondary {
     border-radius: 12px;
     background: #d7d7d700;
     border: 1.5px solid var(--black-color);
     color: var(--black-color);
-    font-family: Poppins;
     font-size: 16px;
-    font-weight: 500;
     line-height: normal;
     letter-spacing: 0.163px;
     text-transform: uppercase;
 }
 
-.secondary:hover {
-    background: #d7d7d7;
-}
-
 .secondaryInverted {
     border-radius: 12px;
-    background: #fff;
+    background: var(--white-color);
+    color: var(--primary-color);
+    font-family: Outfit;
+    font-size: 21.357px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.214px;
+}
+
+.secondary:hover {
+    background: #d7d7d7;
 }
 
 .secondaryInverted:hover {

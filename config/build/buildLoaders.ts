@@ -3,7 +3,7 @@ import { BuildOptions } from './types/config';
 import { buildCssLoader } from './loaders/buildCssLoader';
 import { buildSvgLoader } from './loaders/buildSvgLoader';
 
-export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
+export function buildLoaders({ isDev, paths }: BuildOptions): webpack.RuleSetRule[] {
     const typeScriptLoader = {
         test: /\.tsx?$/,
         use: 'ts-loader',
@@ -37,5 +37,17 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 
     const cssLoader = buildCssLoader(isDev);
 
-    return [typeScriptLoader, cssLoader, svgLoader, babelLoader, fileLoader];
+    const fontsLoader = {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        type: 'asset/resource',
+    };
+
+    return [
+        typeScriptLoader,
+        cssLoader,
+        svgLoader,
+        babelLoader,
+        fileLoader,
+        fontsLoader,
+    ];
 }
