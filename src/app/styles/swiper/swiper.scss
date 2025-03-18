@@ -33,11 +33,11 @@
 }
 
 .slick-next::before {
-    content: url("/public/assets/icons/arrowNext.svg") !important;
+    content: url('/public/assets/icons/arrowNext.svg') !important;
 }
 
 .slick-prev::before {
-    content: url("/public/assets/icons/arrowPrev.svg") !important;
+    content: url('/public/assets/icons/arrowPrev.svg') !important;
 }
 
 @media (max-width: 1280px) {
@@ -55,13 +55,38 @@
 @media (max-width: 1024px) {
     .slick-prev,
     .slick-next {
-        top: 452px;
+        top: 450px;
+    }
+    .slick-prev {
+        left: 673px;
+    }
+
+    .slick-next {
+        left: 740px;
     }
 }
 
 @media (max-width: 600px) {
+    .slick-next::before {
+        content: url('/public/assets/icons/mobArrowNext.svg') !important;
+    }
+
+    .slick-prev::before {
+        content: url('/public/assets/icons/mobArrowPrev.svg') !important;
+    }
     .slick-slide {
         min-width: 170px;
         max-width: 290px;
+    }
+    .slick-prev,
+    .slick-next {
+        top: 452px;
+    }
+    .slick-prev {
+        left: 673px;
+    }
+
+    .slick-next {
+        left: 748px;
     }
 }

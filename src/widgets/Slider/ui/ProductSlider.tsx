@@ -12,7 +12,6 @@ import cls from './ProductSlider.module.scss';
 
 export const ProductSlider: FC = () => {
     const sliderRef = useRef<Slider>(null);
-    const slideCount = 5; // Общее количество слайдов
 
     const settings = {
         infinite: true,
@@ -21,46 +20,6 @@ export const ProductSlider: FC = () => {
         centerPadding: '100px',
         slidesToScroll: 1,
         focusOnSelect: true,
-        beforeChange: (oldIndex: number, newIndex: number) => {
-            // При достижении конца слайдера переходим в начало без анимации
-            if (newIndex === slideCount - 1 && oldIndex === slideCount - 2) {
-                setTimeout(() => {
-                    sliderRef.current?.slickGoTo(0, false); // false отключает анимацию
-                }, 0);
-            }
-        },
-        responsive: [
-            {
-                breakpoint: 1540,
-                settings: {
-                    infinite: true,
-                    slidesToShow: 5,
-                    centerMode: false,
-                    centerPadding: '100px',
-                    speed: 400,
-                    slidesToScroll: 1,
-                    focusOnSelect: false,
-                },
-            },
-            {
-                breakpoint: 1280,
-                settings: {
-                    infinite: true,
-                    centerPadding: '100px',
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    centerMode: false,
-                    focusOnSelect: false,
-                },
-            },
-            {
-                breakpoint: 787,
-                settings: {
-                    swipe: false,
-                    slidesToShow: 1,
-                },
-            },
-        ],
     };
 
     return (

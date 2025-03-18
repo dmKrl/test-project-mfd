@@ -9,6 +9,7 @@
 
 .timerContent {
     display: flex;
+    align-items: center;
     gap: 4px;
     color: var(--white-color);
     font-family: Poppins;
@@ -17,4 +18,20 @@
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.118px;
+}
+
+@media (max-width: 1024px) {
+    .timer {
+        border-radius: 6px;
+        padding: 4px 10px;
+    }
+    .timerContent {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .timerContent {
+        font-size: 9px;
+    }
 }
