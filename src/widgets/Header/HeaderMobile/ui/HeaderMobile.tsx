@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { FC, useContext, useState } from 'react';
+import { FC, useContext } from 'react';
 import { AppLink, LinkOptions } from 'shared/AppLink/ui/AppLink';
 import { Button, ButtonOptions } from 'shared/Button/ui/Button';
 import LogoHeader from 'widgets/assets/logo-header.svg';
