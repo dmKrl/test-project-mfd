@@ -3,7 +3,7 @@ import { BuildOptions } from './types/config';
 import { buildCssLoader } from './loaders/buildCssLoader';
 import { buildSvgLoader } from './loaders/buildSvgLoader';
 
-export function buildLoaders({ isDev, paths }: BuildOptions): webpack.RuleSetRule[] {
+export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     const typeScriptLoader = {
         test: /\.tsx?$/,
         use: 'ts-loader',
