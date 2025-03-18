@@ -33,11 +33,11 @@
 }
 
 .slick-next::before {
-    content: url('/public/assets/icons/arrowNext.svg') !important;
+    content: url("/public/assets/icons/arrowNext.svg") !important;
 }
 
 .slick-prev::before {
-    content: url('/public/assets/icons/arrowPrev.svg') !important;
+    content: url("/public/assets/icons/arrowPrev.svg") !important;
 }
 
 @media (max-width: 1280px) {
@@ -68,11 +68,11 @@
 
 @media (max-width: 600px) {
     .slick-next::before {
-        content: url('/public/assets/icons/mobArrowNext.svg') !important;
+        content: url("/public/assets/icons/mobArrowNext.svg") !important;
     }
 
     .slick-prev::before {
-        content: url('/public/assets/icons/mobArrowPrev.svg') !important;
+        content: url("/public/assets/icons/mobArrowPrev.svg") !important;
     }
     .slick-slide {
         min-width: 170px;

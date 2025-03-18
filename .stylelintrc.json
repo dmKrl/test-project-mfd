@@ -15,6 +15,8 @@
         "keyframes-name-pattern": null,
         "font-family-no-missing-generic-family-keyword": null,
         "rule-empty-line-before": null,
-        "length-zero-no-unit": null
+        "length-zero-no-unit": null,
+        "string-quotes": null,
+        "color-function-notation": null
     }
 }

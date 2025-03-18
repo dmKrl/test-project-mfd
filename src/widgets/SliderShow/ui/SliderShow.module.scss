@@ -11,7 +11,7 @@
 
 .sliderShow h2 {
     color: #c5c5c5;
-    font-feature-settings: 'liga' off, 'clig' off;
+    font-feature-settings: "liga" off, "clig" off;
     font-family: Poppins;
     font-size: 45px;
     font-weight: 600;
@@ -29,7 +29,7 @@
 
 .arrowButtons::before {
     position: absolute;
-    content: url('../assets/lineArrowButtons.svg');
+    content: url("../assets/lineArrowButtons.svg");
     bottom: 14px;
     right: 83px;
 }
@@ -50,10 +50,10 @@
         width: 102px;
         height: 42px;
         border-radius: 10.597px;
-        box-shadow: 0px 26.494px 21.195px -15.896px rgba(15, 15, 15, 0.12);
+        box-shadow: 0px 26.494px 21.195px -15.896px rgb(15 15 15 / 12%);
     }
     .arrowButtons::before {
-        content: url('../assets/lineArrowButtonsMob.svg');
+        content: url("../assets/lineArrowButtonsMob.svg");
         bottom: 6px;
         right: 50px;
     }
