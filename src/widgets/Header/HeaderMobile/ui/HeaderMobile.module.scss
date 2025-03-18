@@ -1,5 +1,4 @@
 .header {
-    border-bottom: 1px solid #cbcbcb;
     padding: 30px 30px 20px !important;
     margin: 0 !important;
     display: none;
@@ -8,7 +7,11 @@
 .headerWrapper {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #cbcbcb;
+    padding-bottom: 20px;
     width: 100%;
+    position: relative;
+    z-index: 100;
 }
 
 .headerLogoBlock {
@@ -22,14 +25,24 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f9f9f9; // Полупрозрачный фон
+    opacity: 0;
+    background-color: #f9f9f9;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
     pointer-events: none;
-    z-index: 30; /* Убедитесь, что он выше всего */
+    z-index: 0;
+}
+
+.mobileNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
 }
 
 .opened {
@@ -40,27 +53,25 @@
     animation-fill-mode: forwards;
     animation-name: navbarIn;
     animation-delay: 0s;
+    z-index: 30;
+    padding: 0px 20px;
+    margin-top: 50px;
 }
 
 .closed {
     opacity: 0;
-    pointer-events: all;
+    pointer-events: none;
     animation-duration: 0.2s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     animation-name: navbarOut;
     animation-delay: 0s;
-}
-
-@media (max-width: 600px) {
-    .header {
-        display: flex;
-    }
+    z-index: 0;
 }
 
 @keyframes navbarOut {
     from {
-        height: calc(100% - var(--header-height));
+        height: 100%;
         transform: translateY(0);
         opacity: 1;
     }
@@ -80,8 +91,16 @@
     }
 
     to {
-        height: calc(100% - var(--header-height));
+        height: 100%;
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+// Mobile
+
+@media (max-width: 600px) {
+    .header {
+        display: flex;
     }
 }

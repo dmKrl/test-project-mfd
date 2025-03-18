@@ -9,6 +9,7 @@ export enum LinkOptions {
     UNIQUE = 'unique',
     UNIQUE_BLACK = 'uniqueBlack',
     CLEAR = 'clear',
+    SOCIAL_LINK = 'socialLink',
 }
 
 interface AppLinkProps extends LinkProps {

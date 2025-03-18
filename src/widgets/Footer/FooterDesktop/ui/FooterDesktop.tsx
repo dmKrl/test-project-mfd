@@ -4,12 +4,12 @@ import { Social } from 'widgets/Social';
 import LogoFooter from 'widgets/assets/logo-footer.svg';
 import { FooterNavbar } from 'widgets/Navabar';
 import classNames from 'classnames';
-import cls from './Footer.module.scss';
+import cls from './FooterDesktop.module.scss';
 
-interface FooterProps {
+interface FooterDesktopProps {
 }
 
-export const Footer: FC<FooterProps> = () => {
+export const FooterDesktop: FC<FooterDesktopProps> = () => {
     return (
         <div className={classNames('container', {}, [cls.footer])}>
             <div className={cls.footerUp}>

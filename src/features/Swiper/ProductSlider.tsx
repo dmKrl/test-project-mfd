@@ -21,10 +21,9 @@ export const ProductSlider: FC = () => {
         slidesToScroll: 1,
         focusOnSelect: true,
         beforeChange: (oldIndex: number, newIndex: number) => {
-            // При достижении конца слайдера переходим в начало без анимации
             if (newIndex === slideCount - 1 && oldIndex === slideCount - 2) {
                 setTimeout(() => {
-                    sliderRef.current?.slickGoTo(0, false); // false отключает анимацию
+                    sliderRef.current?.slickGoTo(0, false);
                 }, 0);
             }
         },
@@ -37,24 +36,25 @@ export const ProductSlider: FC = () => {
                     centerMode: false,
                     speed: 300,
                     slidesToScroll: 1,
-                    focusOnSelect: false,
+                    focusOnSelect: true,
                 },
             },
             {
-                breakpoint: 1280,
+                breakpoint: 1024,
                 settings: {
                     infinite: true,
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     centerMode: true,
-                    focusOnSelect: false,
+                    focusOnSelect: true,
                 },
             },
             {
-                breakpoint: 787,
+                breakpoint: 600,
                 settings: {
-                    swipe: false,
-                    slidesToShow: 1,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    focusOnSelect: true,
                 },
             },
         ],

@@ -67,6 +67,8 @@
     line-height: 150%;
 }
 
+// Tablet
+
 @media (max-width: 1024px) {
     .slideContent h4 {
         font-size: 15px;
@@ -78,5 +80,13 @@
 
     .slideScore p {
         font-size: 16px;
+    }
+}
+
+// Mobile
+
+@media (max-width: 600px) {
+    .sliderItem {
+        transform: scale(0.8);
     }
 }

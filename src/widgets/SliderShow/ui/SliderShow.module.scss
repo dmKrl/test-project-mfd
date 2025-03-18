@@ -32,8 +32,13 @@
     }
 }
 
+// Tablet
+
 @media (max-width: 1024px) {
     .sliderShow h2 {
         font-size: 32px;
+    }
+    .arrowButtons {
+        height: 45.987px;
     }
 }

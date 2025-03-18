@@ -8,7 +8,8 @@
     font-weight: 500;
 }
 
-.clear {
+.clear,
+.socialLink {
     padding: 0;
     margin: 0;
 }
@@ -51,5 +52,23 @@
 @media (max-width: 1024px) {
     .appLink {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .primary {
+        font-size: 40px;
+    }
+    .secondary {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0;
+    }
+    .uniqueBlack,
+    .unique {
+        font-size: 20px;
+    }
+    .socialLink {
+        max-height: 23px;
     }
 }

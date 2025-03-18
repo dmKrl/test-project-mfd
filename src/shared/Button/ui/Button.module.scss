@@ -100,6 +100,8 @@
     background: #f2f2f2;
 }
 
+// Tablet
+
 @media (max-width: 1024px) {
     .button {
         font-size: 12px;
@@ -118,5 +120,24 @@
 
     .primaryCard {
         font-size: 10px;
+    }
+}
+
+// Mobile
+
+@media (max-width: 600px) {
+    .primaryHeader {
+        font-size: 20px;
+        padding: 19px 64px;
+    }
+    .primary,
+    .secondary {
+        padding: 15px 21px;
+    }
+    .primaryInverted,
+    .secondaryInverted {
+        font-size: 11px;
+        padding: 9px 12px;
+        border-radius: 6px;
     }
 }

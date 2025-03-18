@@ -15,16 +15,22 @@ export enum ButtonOptions {
 interface ButtonProps {
     themeButton?: ButtonOptions,
     children: ReactNode,
+    className?: string,
     onClick?: () => void,
 }
 
 export const Button: FC<ButtonProps> = (props) => {
-    const { children, themeButton, onClick } = props;
+    const {
+        children,
+        themeButton,
+        onClick,
+        className,
+    } = props;
 
     return (
         <button
             type='button'
-            className={classNames(cls.button, {}, [cls[themeButton]])}
+            className={classNames(cls.button, {}, [cls[themeButton], className])}
             onClick={onClick}
         >
             {children}

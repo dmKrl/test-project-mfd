@@ -2,3 +2,13 @@
     display: flex;
     gap: 70px;
 }
+
+// Mobile
+
+@media (max-width: 600px) {
+    .footerNavbar {
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 32px;
+    }
+}

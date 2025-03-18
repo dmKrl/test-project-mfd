@@ -50,8 +50,18 @@
     .slick-list {
         padding: 0 160px 50px !important;
     }
+}
 
-    .slick-track {
-        width: 9000px !important;
+@media (max-width: 1024px) {
+    .slick-prev,
+    .slick-next {
+        top: 452px;
+    }
+}
+
+@media (max-width: 600px) {
+    .slick-slide {
+        min-width: 170px;
+        max-width: 290px;
     }
 }

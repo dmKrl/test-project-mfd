@@ -11,3 +11,12 @@
 .socialIcon:hover {
     fill: var(--white-color);
 }
+
+// Mobile
+
+@media (max-width: 600px) {
+    .social {
+        gap: 20px;
+        padding-left: 20px;
+    }
+}
